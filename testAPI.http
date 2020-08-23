@@ -1,0 +1,31 @@
+http://localhost:3333/api
+
+###
+
+http://localhost:3333/api/contact
+
+###
+# Add ID
+GET http://localhost:3333/api/contact/ + ID
+
+###
+
+POST http://localhost:3333/api/contact HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Test"
+}
+
+###
+# Add ID
+PUT http://localhost:3333/api/contact/ + ID HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Test OO"
+}
+
+###
+# Add ID
+DELETE http://localhost:3333/api/contact/ + ID
